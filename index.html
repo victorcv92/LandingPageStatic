@@ -6,29 +6,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LandingPage</title>
     <link rel="stylesheet" href="./dist/outStyle.css">
+
 </head>
 
 <body>
-    <div class="mt-10 ml-20">
-        <h1 class="text-3xl">Hii My Amigo!!!!!!</h1>
-        <button class="bg-red-500 pl-5 pr-5 pt-2 pb-2 text-white rounded mt-5">Click</button>
-    </div>
+    <nav class="bg-lps-color-dark text-gray-300 py-2 text-sm">
+        <div class="container mx-auto flex justify-between">
+            <div class="flex items-center">
+                <div>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos fugit neque
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                    </svg>
+                </div>
+            </div>
 
-    <div class="border border-blue-700 ml-20 mr-20 mt-10">
-        <div class="bg-blue-700 text-white pt-5 pb-5 pl-5">
-            <p>Inicio</p>
+            <div class="flex gap-4 items-center hover:first-line:bg-lps-color-light">
+                <a href=""
+                    class="bg-lps-color-mediumdark px-3 py-1 rounded text-sky-400 font-semibold hover:text-white">Inicio</a>
+                <a href="" class="hover:text-white">Blog</a>
+                <a href="" class="hover:text-white">Docs</a>
+                <a href="" class="hover:text-white">Support</a>
+                <a href="" class="hover:text-white">Sales</a>
+            </div>
         </div>
-        <div>
-            <p class="leading-relaxed p-5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea maiores sapiente, sed debitis molestiae,
-                iste,
-                ratione voluptatum et sint pariatur necessitatibus. Fuga, laboriosam minus incidunt iusto asperiores
-                tenetur
-                tempora minima.
-            </p>
+    </nav>
+
+    <nav class="shadow-xl relative z-10">
+        <div class="container flex items-center justify-between mx-auto py-2">
+            <div class="flex items-center gap-x-6 ">
+                <img class="size-14 rounded"
+                    src="https://static.vecteezy.com/system/resources/previews/007/934/281/non_2x/initial-tu-logo-shield-crown-style-luxury-elegant-monogram-logo-design-free-vector.jpg"
+                    alt="tulogo">
+
+                <div class="flex items-center">
+                    <a href="" class="mr-2">Productos</a>
+                    <svg xmlns=" http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-4 h-4 text-gray-500">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </div>
+                <div class="flex items-center">
+                    <a href="" class="mr-2">Soluciones</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-4 h-4 text-gray-500">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </div>
+                <a href="">Precios</a>
+                <a href="">Soporte</a>
+                <a href="">Quienes Somos</a>
+            </div>
+            <div class="gap-2">
+                <a href=""
+                    class="border border-gray-400 px-5 py-2 rounded-lg focus:outline-dotted focus:outline-1 focus:bg-sky-200">Login</a>
+                <a href=""
+                    class="border border-lps-color-light  px-5 py-2 rounded-lg bg-lps-color-light hover:bg-lps-color-medium active:bg-lps-color-mediumdark active:text-gray-500 text-white font-semibold tracking-wide">Register</a>
+            </div>
         </div>
-    </div>
+    </nav>
+
+    <section class="container flex items-center justify-between mx-auto pt-32 pb-48 relative z-0" style="background-image: #f9fafe no-repeat center 
+        url(https://www.elegantthemes.com/images/home/landing-hero-background.jpg);
+        background-size:cover ;">
+        <article class="w-1/2">
+            <div>
+                <h1 class="text-6xl font-bold text-lps-color-dark tracking-tighter"> Que la gente te vea en internet con
+                    tu propia pagina
+                    web</h1>
+                <p class="mt-5 text-xl font-medium text-gray-500 tracking-tighter"> Esta pagina puede ser tuya estas a
+                    un click de tener
+                    presensia en interner.</p>
+            </div>
+        </article>
+
+        <aside class="w-1/2 ">
+            <div class="font-medium">
+                Bienvenido a Tu Pagina Web. Ingresa y Comienza el mundo Digital
+            </div>
+            <form action="" class="mb-4 mt-4">
+                <div class="flex flex-col gap-y-5 w-3/4">
+                    <input
+                        class="border border-gray-400 focus:border-gray-700 rounded-lg px-5 py-3 shadow-input hover:shadow-inputfocus focus:shadow-input outline-none"
+                        type="text" placeholder="Your Name">
+                    <input
+                        class="border border-gray-400 rounded-lg px-5 py-3 shadow-input hover:shadow-inputfocus focus:shadow-input outline-none"
+                        type="email" name="" id="" placeholder="Email">
+                    <input
+                        class="border border-gray-400 rounded-lg px-5 py-3 shadow-input hover:shadow-inputfocus focus:shadow-input outline-none"
+                        type="password" name="" id="" placeholder="Password">
+                </div>
+                <div class="flex gap-x-3 w-3/4 mt-4">
+                    <button
+                        class="border border-lps-color-light w-4/5 px-5 py-3 rounded-lg bg-lps-color-light hover:bg-lps-color-medium active:bg-lps-color-mediumdark active:text-gray-500 text-white font-semibold tracking-wide">A
+                        un Click de la Digitalizacion</button>
+                    <button class="rounded-md px-2  bg-gray-300  hover:bg-gray-400"><img
+                            src="https://www.digitalocean.com/_next/static/media/google-logo.74668a95.svg"
+                            alt="google"></button>
+                    <button class="rounded-md px-2  bg-gray-300 hover:bg-gray-400"><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAbFBMVEU7V53///8yUZojR5bi5u+GlL45VZxCXqHd4e01U5tvgLMnSZbO1ORZb6rr7vU3VJwtTZi5wdmSn8SvudT19vrx8/instB/j7weRJR1hraMmsJidq2+xtzX3OrK0OKgrMxbcatPZ6Zleq8ANY9428BgAAAD/ElEQVR4nO3d23KbMBSFYSGwMAgEBp/jHJy+/zsW7LrtRYbIEGlvadZ/05uU8A02iiXAIvlT1ZW5iKW87KoHTNz/6XMtlaLesR9LKanz/j+hqXU8ukdK1+YhzBpJvTtOkk12F5qmod4XRzWNuQnrgnpPnFXUo7DX1PvhMN0Pwjy+k8y/VJ6IKuZDOBzESnRxnkcfyU6UMb9Ih5dpKaJ+G45vROo9QAghhBBCCCGEEEKIvEK2Ok3139JbWrdDUhYq6PVOJbUWL6v9pVqb3fbWbmeybP1avV02/Xu3Or1c8/GHgky1ab66ZMm3bc1rgLOhw9H72Fvo/hTcfLZq225tzQtQ2Ir+GV5wwlbun/SFJVTpYfc0MCShFG/P+0IS6s/tHGA4Qt3N8gUjVMdnT6GBCZW+zAUGIkw3s4FhCPXzo2BYwna1ABiCcLzyLGqhak3kQj17nAhEWLwsA/IXHp/6MBigUB4WArkLVWs/XRGmcPkh5C5Ml74LuQuLj8VA5kK94C/uIIRKzvtYH46wOC0H8hb+xIuUuXDG5GFQwub6A0DWQnl+irI16+qLOK89tfZvw93mcC30l1ErptK2f9CsTzrI+1tVYTkantNAb1tSVzvgZ0u9p3OTpRWwDBZoeSrdpNT7Ob/Wah445BuUrQaLDevR4Ju0zYJoGfI92Lr6HrgN+UVqNYOxDvlFKlKLabZL9MJ9uIOhsBOGfZu5jfAcvXAFIesghJB/EELIPwgh5B+EEPIPQgj5ByGE/ItDqCY6WgmntsDhTud8IptLS8+TWxij9RV2q7xLymin/T0I36IX9rQLGx6ExAsbHoSn6IU17SKxByGpz4fQEK+guhdSr/O7FxIPhx6E1Ov87oXUq+DuhdSXTLkXXok/PrkXtrELDfUlU86Fr9ELL9QXhTkXvkcvJJ+Kcy58ob6C2LmQ/K4u18It9XDoXJiR34vhWkj/RVWuhRvqwcK5kP4aadfCE/Vg4VxYU59KnQupfc6FO/Lh0LWQeirRvZB6KnFIfWbriSxudDYT/z17Jx8shoP49S30935ZrHIfjhMbYACcLo5rMaaCEEL+QQgh/yCEkH8QQsg/CCHkH4QQ8g9CCPkHIYT8gxBC/kEIIf8ghJB/EELIPwgh5B+EEPIPQgj5ByGE/IMQQv5BCCH/IISQfxBCyD8IIeQfhBDyD0II+QchhPzzKCR66pkvocpFGbmwFEQPlPIllJ0geuyZL6GuBNHjBz0JVZ6IpCc5iJ6Euh+ESU3x4DM/wqJORqFpCL5EwYuwacxNmGSF//OpD6Esxl8yChNTa9+nG/dCpWuTPIRJ0udaekW6FSoldd7ftyIem6u60ucXRLkV5mVXPbbyG8lbTVu7+lVZAAAAAElFTkSuQmCC"
+                            alt="facebook" class="size-7 bg-gray-300"></button>
+                </div>
+            </form>
+
+            <div class="flex text-gray-500">
+                <p>Estas de acuerdo con nuestros <a href="" class="underline font-line">Terminos de Servicio</a> </p>
+            </div>
+        </aside>
+    </section>
+
 
 </body>
+<footer class="container">
+    <hr class="border border-lps-color-mediumdark">
+    <h1>Footer</h1>
+</footer>
 
 </html>

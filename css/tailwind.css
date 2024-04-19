@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body{
+    /**
+    /** acceder a las directivas de tailwind a traves de @apply
+    @apply bg-gray-400;
+
+    /** acceder a las directivas de tailwind a traves de @apply y configurando el % en tailwind.config.js*/
+    /**padding-left: 25%;  esto lo pondremos de acuerdo a la config
+    @apply pl-quarter;
+    
+
+    /** CSS puro, Tailwind no tiene %
+    padding-right: 25%;
+    padding-top: 5%;*/
+}
+
