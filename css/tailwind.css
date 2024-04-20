@@ -19,5 +19,14 @@ body{
     /** CSS puro, Tailwind no tiene %
     padding-right: 25%;
     padding-top: 5%;*/
+
+    @layer components{
+        .btn-blue{
+            @apply border border-lps-color-light  px-5 py-2 rounded-lg bg-lps-color-light hover:bg-lps-color-medium active:bg-lps-color-mediumdark active:text-gray-500 text-white font-semibold tracking-wide;
+        }
+        .panel{
+             @apply bg-white shadow-lg rounded-lg;
+        }
+    }
 }
 
