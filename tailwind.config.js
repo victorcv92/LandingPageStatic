@@ -1,13 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode:'class',
   content: [
     './*.html'
   ],
   theme: {
     container:{
-      padding: '1.4rem' ,
+      padding: {
+       'DEFAULT': '1.4rem' ,
+       '2xl':'7rem',
+      }
     },
     extend: {
+      transitionTimingFunction:{
+        'timingmy': 'cubic-bezier(.05,.78,.93,.25)'
+      },
       spacing:{
         'quarter':'25%'
       },
@@ -31,6 +38,8 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms')
+  ],
 }
 

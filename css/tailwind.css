@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap);
 
 @tailwind base;
 @tailwind components;
@@ -20,12 +20,40 @@ body{
     padding-right: 25%;
     padding-top: 5%;*/
 
+    @layer base{
+        [type=text],
+        input:where(:not([type])),
+        [type=email],
+        [type=url],
+        [type=password],
+        [type=number],
+        [type=date],
+        [type=datetime-local],
+        [type=month],
+        [type=search],
+        [type=tel],
+        [type=time],
+        [type=week],
+        [multiple],
+        textarea,
+        select {
+            @apply w-full rounded border-gray-400 mb-4 focus:border-blue-500 focus:ring-blue-500;
+        }
+
+        [type='checkbox'], [type='radio']{
+            @apply text-red-500 focus:ring-red-800;
+        }
+    }
+
     @layer components{
         .btn-blue{
             @apply border border-lps-color-light  px-5 py-2 rounded-lg bg-lps-color-light hover:bg-lps-color-medium active:bg-lps-color-mediumdark active:text-gray-500 text-white font-semibold tracking-wide;
         }
         .panel{
              @apply bg-white shadow-lg rounded-lg;
+        }
+        .formsinput{
+            @apply w-full rounded border-gray-400 mb-4 focus:border-green-500 focus:ring-green-500;
         }
     }
 }
